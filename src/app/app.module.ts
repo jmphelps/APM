@@ -10,7 +10,6 @@ import { StarComponent } from './shared/star.component';
 import { ConvertToSpacesPipe } from './shared/convert-to-spaces.pipe';
 import { ProductDetailComponent } from './products/product-detail.component';
 import { WelcomeComponent } from './home/welcome.component';
-import { ErrorComponent } from './errorpages/error/error.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +18,7 @@ import { ErrorComponent } from './errorpages/error/error.component';
     ConvertToSpacesPipe,
     StarComponent,
     ProductDetailComponent,
-    WelcomeComponent,
-    ErrorComponent
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +30,6 @@ import { ErrorComponent } from './errorpages/error/error.component';
     { path: 'welcome', component: WelcomeComponent },
     { path: '', redirectTo: 'welcome', pathMatch: 'full' },
     { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
-    // { path: '**', component: ErrorComponent }
   ])
   ],
   bootstrap: [AppComponent]
